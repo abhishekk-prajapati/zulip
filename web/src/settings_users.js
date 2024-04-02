@@ -169,7 +169,7 @@ function get_last_active(user) {
     const last_active_date = presence.last_active_date(user.user_id);
 
     if (!last_active_date) {
-        return $t({defaultMessage: "Unknown"});
+        return $t({defaultMessage: "15+ years ago"});
     }
     return timerender.render_now(last_active_date).time_str;
 }
